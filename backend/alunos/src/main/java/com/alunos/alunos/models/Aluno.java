@@ -1,6 +1,7 @@
 package com.alunos.alunos.models;
 
 public class Aluno {
+
     private int id;
     private String nome;
     private String email;
@@ -16,18 +17,21 @@ public class Aluno {
         this.idCurso = idCurso;
         this.periodo = periodo;
     }
+    
     public Aluno(){
 
     }
 
 
-    
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+    
+
     public String getNome() {
         return nome;
     }
@@ -58,4 +62,7 @@ public class Aluno {
     public void setPeriodo(int periodo) {
         this.periodo = periodo;
     }
+
+
+    
 }
