@@ -29,7 +29,8 @@ public class CursoController {
     private List<Curso> cursos = Arrays.asList( new Curso(1, "Java"),
                                                 new Curso(2, "JavaScript"),
                                                 new Curso(3, ".NET"),
-                                                new Curso(4, "Python"));
+                                                new Curso(4, "Python"),
+                                                new Curso(5, "Rust"));
 
     @PostMapping("cursos")
     @CrossOrigin

@@ -40,6 +40,7 @@ public class AlunoController {
     }
 
     @GetMapping("alunos/{id}")
+    @CrossOrigin
     public ResponseEntity<Aluno> getAluno(@PathVariable int id) {
         Aluno aluno = alunos.stream()
                             .filter(a -> a.getId() == id).findFirst()
@@ -50,6 +51,7 @@ public class AlunoController {
 
 
     @GetMapping("alunos")
+    @CrossOrigin
     public List<Aluno> getAlunos() {
         return alunos;
     }
